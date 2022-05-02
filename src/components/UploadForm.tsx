@@ -107,6 +107,7 @@ const UploadForm = (props: any) => {
           </div>
 
           <button
+            id="upload-button"
             className="w-full py-2 px-4 bg-[#03a9f4] hover:bg-[#01579b] rounded-md text-white text-sm mt-5"
             onClick={emitFileUpload}
           >

@@ -491,6 +491,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <div
+      id="drop-zone"
       className="max-w-screen-4xl my-0 mx-auto overflow-y-auto overflow-x-hidden h-screen block"
       onDragOver={(e: SyntheticEvent) => e.preventDefault()}
       onDragEnter={dragEnter}

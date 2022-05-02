@@ -87,7 +87,11 @@ export const Login: React.FC<Props> = ({ setIsAuth, setIsAuthError, isAuthError 
 
         {isAuthError ? (
           <div>
-            <label htmlFor="" className="text-sm font-bold text-red-600 block text-center content-center ">
+            <label
+              id="login-error-label"
+              htmlFor=""
+              className="text-sm font-bold text-red-600 block text-center content-center "
+            >
               Username or Password is Incorrect
             </label>
           </div>
@@ -129,6 +133,7 @@ export const Login: React.FC<Props> = ({ setIsAuth, setIsAuthError, isAuthError 
 
             <div>
               <button
+                id="login"
                 type="submit"
                 className="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 rounded-md text-white text-sm"
               >

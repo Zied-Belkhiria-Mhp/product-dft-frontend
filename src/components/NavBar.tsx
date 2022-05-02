@@ -62,7 +62,7 @@ const Nav = (props: any) => {
           <img src="images/logo-dft.svg" alt="DFT logo" className="w-14 h-14 fill-white  hover:fill-teal-600" />
         </div>
 
-        <div className="font-bold text-2xl cursor-pointer flex items-center text-[#fbfcfa] ">
+        <div id="navbar-title" className="font-bold text-2xl cursor-pointer flex items-center text-[#fbfcfa] ">
           Data Format Transformation
         </div>
         <span className="cursor-pointer" onClick={handleMenu}>
@@ -83,7 +83,7 @@ const Nav = (props: any) => {
           open={Boolean(anchorEl)}
           onClose={handleClose}
         >
-          <MenuItem onClick={logout}>
+          <MenuItem id="logout" onClick={logout}>
             <span>
               <Logout /> &nbsp; Logout
             </span>
